@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Supprimer un coach </title>
+    <li class="navi1"><a href="touslescoach.php">Retourner voir tous les coach</a></li>
+
+          <style type="text/css">
+    h1{
+        color: black;
+
+    }
+    h3{
+        padding-left: 0%;
+        color: black;
+    }
+    #case {
+        float: right;
+        
+    }
+    td{
+        padding-left: 30%;
+    }
+    .mySubmit {
+        margin: 1% 1% 1% 1%;
+    }
+    #wrapper2 {
+        width: 20%;
+        min-width: 39%; 
+        border-style: solid;
+    }
+            </style>
+    <meta charset="utf-8">
+    </head>
+    <body>
+
+        
+<form action = "supprimercoach.php" method="post">
+<h1>Supprimer un coach</h1>
+<h3>1. Entrer les informations sur du coach à supprimer</h3>
+<div id="wrapper2">    
+<table>
+<tr>
+<td><input type="text" name="nom" placeholder="Nom"></td>
+</tr>
+<tr>
+<td><input type="text " name="prenom" placeholder="Prenom"></td>
+</tr>
+</table>
+</div>
+
+
+<tr>
+    <div class="mySubmit">
+    <td colspan="2" align="pading-left">
+    <input type="submit" value="Supprimer">
+    </td>
+</div>
+
+</tr>
+</form>
+</body>
+</html>

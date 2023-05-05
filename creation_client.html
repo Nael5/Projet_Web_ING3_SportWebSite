@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Création compte client </title>
+          <style type="text/css">
+    
+    body{
+    background: pink;
+}
+#container{
+    width:30%;
+    margin:0 auto;
+    margin-top:10%;
+    
+}
+/* Bordered form */
+form {
+    width:50%;
+    height: 30%;
+    border: 3% solid #f1f1f1;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+
+}
+#container h1{
+    width: 38%;
+    
+}
+
+#questionnaire{
+    width: 40%;
+    
+
+}
+fieldset{
+   width: 60%;
+}
+/* Full-width inputs */
+input[type=text] {
+    display: inline-block;
+    border: 1% solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    width: 35%;
+
+}
+input[type=codepostal] {
+    display: inline-block;
+    border: 1% solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    width: 35%;
+    margin-left: 5px;
+
+}
+input[type=tel] {
+    display: inline-block;
+    border: 1% solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    width: 35%;
+    margin-left: 5px;
+
+}
+input[type=email] {
+    display: inline-block;
+    border: 1% solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    width: 35%;
+    margin-left: 5px;
+
+}
+input[type=password] {
+    display: inline-block;
+    border: 1% solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    width: 35%;
+    margin-left: 5px;
+
+}
+input[type=number_format] {
+    display: inline-block;
+    border: 1% solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    width: 35%;
+}
+input[type= date] {
+    display: inline-block;
+    border: 1% solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    width: 35%;
+}
+
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: orange;
+    color: white;
+    padding: 5% 5%;
+    margin: 2% 0%;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+p{
+    color: black;
+    text-align: center;
+}
+table{ 
+    margin: auto;
+}
+h2{
+    text-align: center;
+
+}
+    
+            </style>
+    <meta charset="utf-8">
+    </head>
+    <body>
+
+<form action="creation_client.php" method="post">
+    <h2>Création de votre compte client</h2>
+        <div class="salut">
+            <div class="questionnaire">
+                <center>
+                    <fieldset><br>
+                        <table border="1">
+                            <legend>Vos informations personnelles</legend>
+                            
+                            <tr>
+                                <center><input type="text" placeholder="Entrer votre nom"name="nom"  required></center>
+                            </tr>
+                            <tr>
+                                <center><input type="text" placeholder="Entrer votre prenom"name="prenom" placeholder="Entrer votre prenom" required></center>
+                            </tr>
+                            <tr>
+                                <center><input type="text" name="adresse" placeholder="Adresse"></center>
+                            </tr>
+                            <tr>
+                                <center><input label type="codepostal" name="code_postal" placeholder="Code postal"></center>
+                            </tr>
+                            <tr>
+                                <center><input type="text" name="ville" placeholder="Ville"></center>
+                            </tr>
+                            <tr>
+                                <center><input type="text" name="pays" placeholder="Pays"></center>
+                            </tr>
+                            <tr>
+                                <center><input type="tel" name="tel" placeholder="Numéro de télephone"></center>
+                            </tr>
+                            <tr>
+                                <center><input type="email" name="mail" placeholder="prenom.nom@ece.edu.fr"></center>
+                            </tr>
+                            <tr>
+                                <center><input type="text" name="logine" placeholder="Nom d'utilisateur"></center>
+                            </tr>
+                            <tr>
+                                <center><input type="password" placeholder="Mot de passe" name="mdp" required></center>
+                            </tr>
+                            <br>
+                            <tr>
+                                <fieldset>
+                            <legend>Carte d'étudiant</legend>
+                                <center>
+                                <input type="radio" name="carte_etudiant" value="oui">oui
+                                <input type="radio" name="carte_etudiant" value="non">non <br>
+                                </center>
+                            </fieldset>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </center>
+            </div>
+            <div class="paiment"> 
+                <center>  
+                    <fieldset> 
+                        <legend>Information de paiement</legend>
+
+                        <table border="1">
+                            <center>
+                                <fieldset>   
+                                    <legend>Payer par</legend> 
+                                    
+                                    <input type="radio" name="type_carte" value="MasterCard">MasterCard<br>
+                                    <input type="radio" name="type_carte" value="Visa" >Visa<br>
+                                    <input type="radio" name="type_carte" value="Amex">American Express<br>
+                                    <input type="radio" name="type_carte" value="PayPal">PayPal<br>
+                                
+                                </fieldset>
+                            </center>
+                            <br>
+                            <tr>
+                                <label><b>Numéro de carte de crédit</b></label>
+                                <input type='number_format' name="numero_carte" minlength="16" >
+                            </tr>
+                                <br>
+                            <tr>
+                                <label><b>Nom sur la carte</b></label>
+                                <input type="text" name="nom_carte">
+                            </tr>
+                                <br>
+                            <tr>
+                                <label><b>Date d'expiration</b></label>
+                                <input type="date" name="expiration">
+                            </tr>
+                                <br>
+                            <tr>
+                                <label><b>Code de sécurité</b></label>
+                                <input type='number_format' name="cvc" maxlength="4" minlength="3" >
+                            </tr>
+                                <br>
+                            <tr>
+                        </table>
+                    </fieldset>
+                </center>
+            </div>  
+            <div class="mySubmit">
+                <center>
+                    <input type="submit" value="Créer votre compte">
+                </center>
+            </div>
+        </div>       
+</form>
+</body>
+</html>

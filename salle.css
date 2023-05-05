@@ -1,0 +1,44 @@
+#pres{
+    width: 100%;
+    height: 60%;
+}
+
+
+.salle{float: left;
+    width: 40%;
+    margin-left: 3%;
+    margin-top: 0%;
+}
+
+.corps{
+    float: left;
+    width: 40%;
+    margin-left: 0%;
+}
+
+
+.sale{
+    margin-top: 0%;
+    font-size: 200%;
+}
+
+.titre{
+    font-size: 300%;
+}
+
+.tel{
+    font-size: 200%;
+}
+.mail{
+    font-size: 200%;
+}
+
+.ser{
+    font-size: 200%;
+    text-align: center;
+    list-style: none;
+    margin-top: 0%;
+    background-color: pink;
+    margin-bottom: 15%;
+    
+}

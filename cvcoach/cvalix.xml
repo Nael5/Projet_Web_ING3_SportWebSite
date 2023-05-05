@@ -1,0 +1,34 @@
+
+<cv>
+<etatCivil>
+<nom>Petit</nom>
+<prenom>Alix</prenom>
+<dateDeNaissance> 20 mars 1981</dateDeNaissance>
+<email>rafa@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>diplome entraineur de natation</libelle>
+<annee>2002</annee>
+</formation>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2004</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 2005</debut>
+<fin>fevrier 2014</fin>
+<poste>entraineur de Manaudou</poste>
+</experience>
+<experience>
+<debut>janvier 2016</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>
+

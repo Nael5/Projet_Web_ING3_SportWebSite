@@ -1,0 +1,29 @@
+<cv>
+<etatCivil>
+<nom>Andrier</nom>
+<prenom>Victor</prenom>
+<dateDeNaissance> 20 mars 1979</dateDeNaissance>
+<email>victor@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2000</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 2001</debut>
+<fin>decembre 2013</fin>
+<poste>entraineur chez basic-fit</poste>
+</experience>
+<experience>
+<debut>janvier 2014</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>
+

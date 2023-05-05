@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lire un fichier XML par JavaScript</title>
+<!-- CSS -->
+<style>
+table {
+border-collapse: collapse;
+width: 100%;
+}
+th, td {
+text-align: left;
+padding: 8px;
+}
+tr:nth-child(even) {
+background-color: #7ce2af
+}
+th {
+background-color: #336699;
+color: white;
+}
+.button {
+position: relative;
+text-align: center;
+padding: 20px;
+border: 4px solid rgb(55, 12, 211);
+background-color: rgba(20, 192, 4, 0.5);
+color: rgb(230, 36, 78);
+outline: none;
+border-radius: 10px;
+font-size: 30px;
+width: 500px;
+}
+.button:hover {
+color: black;
+background-color: white;
+}
+</style>
+<!--JavaScript-->
+<script>
+function loadXMLDoc(cv) {
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+// Request finished and response
+// is ready and Status is "OK"
+if (this.readyState == 4 && this.status == 200) {
+empDetails(this);
+}
+};
+// etudiants.xml is the external xml file
+xmlhttp.open("GET", "cv.xml", true);
+xmlhttp.send();
+}
+
+function empDetails(xml) {
+var i;
+var xmlDoc = xml.responseXML;
+var table =
+`<tr>
+ <th>Prenom</th>
+ <th>Nom</th>
+<th>Age</th>
+<th>Majeure</th>
+<th>Ville</th>
+<th>Pays</th>
+</tr>`;
+var x = xmlDoc.getElementsByTagName("cv");
+// Start to fetch the data by using TagName
+for (i = 0; i < x.length; i++) {
+table += 
+ "<tr><td>" +
+x[i].getElementsByTagName("prenom")[0]
+.childNodes[0].nodeValue 
++ "</td><td>" +
+x[i].getElementsByTagName("nom")[0]
+.childNodes[0].nodeValue 
++ "</td><td>" +
+ue 
++ "</td></tr>";
+}
+// Print the xml data in table form
+document.getElementById("myTable").innerHTML = table;
+}
+</script>
+</head>
+<body>
+<p>
+<center>
+<button type="button" class="button"
+onclick="loadXMLDoc(cv.xml)">
+afficher cv
+</button>
+</center>
+</p>
+<p>
+<table id="myTable"></table>
+</p>
+</body>
+</html

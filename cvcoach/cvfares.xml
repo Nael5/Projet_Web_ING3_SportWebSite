@@ -1,0 +1,33 @@
+<cv>
+<etatCivil>
+<nom>Messaoudi</nom>
+<prenom>Fares</prenom>
+<dateDeNaissance> 20 mars 1980</dateDeNaissance>
+<email>fares@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>diplome entraineur rugby</libelle>
+<annee>2001</annee>
+</formation>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2010</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 2005</debut>
+<fin>fevrier 2013</fin>
+<poste>entraineur équipe de france</poste>
+</experience>
+<experience>
+<debut>janvier 2014</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>
+

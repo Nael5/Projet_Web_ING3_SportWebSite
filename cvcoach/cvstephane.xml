@@ -1,0 +1,33 @@
+<cv>
+<etatCivil>
+<nom>Picard</nom>
+<prenom>Stephane</prenom>
+<dateDeNaissance> 20 mars 1978</dateDeNaissance>
+<email>stephane@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>Diplome d'entraineur de plonger</libelle>
+<annee>2000</annee>
+</formation>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2007</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 2001</debut>
+<fin>fevrier 2013</fin>
+<poste>entraineur à l'armée française</poste>
+</experience>
+<experience>
+<debut>janvier 2014</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>
+

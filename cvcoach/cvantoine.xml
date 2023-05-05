@@ -1,0 +1,32 @@
+<cv>
+<etatCivil>
+<nom>Ribes</nom>
+<prenom>Antoine</prenom>
+<dateDeNaissance> 20 mars 1976</dateDeNaissance>
+<email>antoine@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>entraineur bodybuilding</libelle>
+<annee>1999</annee>
+</formation>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2004</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 1998</debut>
+<fin>janvier 1998</fin>
+<poste>Champion de France de bodybuilding</poste>
+</experience>
+<experience>
+<debut>janvier 2002</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>

@@ -1,0 +1,23 @@
+.text{
+    float: left;
+    margin-left: 10%;
+}
+.h{
+    float: left;
+}
+
+
+.titre{
+    margin-left: 42%;
+    font-size: 350%;
+}
+body{background-color: darkgrey;}
+
+
+.ph{
+    border-radius: 70%;
+}
+
+.tet{
+    border-radius: 70%;
+}

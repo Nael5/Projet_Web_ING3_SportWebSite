@@ -1,0 +1,30 @@
+  #carrousel {
+    position: relative;
+    height: 70%;
+    width: 100%;
+    margin: auto;
+    
+  }
+  #carrousel ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .next {
+    position: relative;
+    top: 250px;
+    left: 900px;
+    background-color: #add080;
+    font-size: 20px;
+    border-radius: 6px;
+  }
+  .prev {
+    position: relative;
+    top: 250px;
+    left: 420px;
+    background-color: #add080;
+    font-size: 20px;
+    border-radius: 6px;
+  }

@@ -1,0 +1,28 @@
+<cv>
+<etatCivil>
+<nom>Levin</nom>
+<prenom>Margaux</prenom>
+<dateDeNaissance> 20 mars 1982</dateDeNaissance>
+<email>margaux@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2010</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 2002</debut>
+<fin>fevrier 2008</fin>
+<poste>Cycliste professionnelles</poste>
+</experience>
+<experience>
+<debut>janvier 2012</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>

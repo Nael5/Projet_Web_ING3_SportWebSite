@@ -1,0 +1,32 @@
+<cv>
+<etatCivil>
+<nom>Schapira</nom>
+<prenom>Emma</prenom>
+<dateDeNaissance> 20 mars 1992</dateDeNaissance>
+<email>emma@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>det</libelle>
+<annee>2012</annee>
+</formation>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2014</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 2018</debut>
+<fin>fevrier 2019</fin>
+<poste>entraineur de Pouille</poste>
+</experience>
+<experience>
+<debut>janvier 2020</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>

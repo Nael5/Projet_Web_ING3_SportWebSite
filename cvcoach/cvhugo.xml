@@ -1,0 +1,33 @@
+<cv>
+<etatCivil>
+<nom>Roy</nom>
+<prenom>Hugo</prenom>
+<dateDeNaissance> 20 mars 1977</dateDeNaissance>
+<email>hugo@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>diplome entraineur </libelle>
+<annee>2000</annee>
+</formation>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2004</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 2002</debut>
+<fin>fevrier 2014</fin>
+<poste>entraineur au Real Madrid</poste>
+</experience>
+<experience>
+<debut>janvier 2017</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>
+

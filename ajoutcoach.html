@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Création coach </title>
+    
+    <style type="text/css">
+
+    h1{
+        color: black;
+
+    }
+    h3{
+        padding-left: 0%;
+        color: black;
+    }
+    #case {
+        float: right;
+        
+    }
+    td{
+        padding-left: 0%;
+    }
+    .mySubmit {
+        margin: 1% 1% 1% 1%;
+    }
+    #wrapper2 {
+        width: 20%;
+        min-width: 39%; 
+        border-style: solid;
+    }
+            </style>
+    <meta charset="utf-8">
+
+    <script>
+
+        function changeColor(cellID){
+            var onecell = document.getElementById(cellID);
+            if(onecell.style.backgroundColor =="")
+            {
+                onecell.style.backgroundColor = "rgb(36, 33, 33)";
+            } else{
+                onecell.style.backgroundColor = "";
+            }    
+        }
+        function listDispo()
+        {
+            let list = "";
+            for(let i = 1; i<=12 ; i++){
+                let cellID = 'cell' + i;
+                console.log(cellID);
+                let one = document.getElementById(cellID);
+                if(one.style.backgroundColor == ""){
+                    list += "0";
+                }else {
+                    list += "1";
+                }
+            }
+            document.getElementById("tab").value = list;
+        }
+    
+    </script>
+    
+    </head>
+    <body>
+
+        
+<form action = "ajoutercoach.php" method="post">
+<h1>Ajout d'un coach</h1>
+
+<h3 class="mt-5 mb-'4">Etape 1. Entrer les informations sur le nouveau coach</h3>
+<center>
+    <table name="info" class="table text-center" border="1" style="table-layout: fixes; width :1000px ;">
+        
+        <td><input type="text" name="nom" placeholder="Nom"></td>
+        </tr>
+        <tr>
+        <td><input type="text " name="prenom" placeholder="Prenom"></td>
+        </tr>
+        <tr>
+        <td><input type="text " name="specialite" placeholder="Specilite"></td>
+        </tr>
+        <tr>
+        <td><input label type="mail" name="mail" placeholder="Adresse e-mail"></td>
+        </tr>
+        <tr>
+        <td><input type="text " name="bureau" placeholder="Bureau"></td>
+        </tr>
+        <tr>
+        <td><input type="tel" name="tel" placeholder="Numéro de téléphone"></td>
+        </tr>
+        <tr>
+        <td><input type="number" name="tarif" placeholder="Tarif du coach"></td>
+        </tr>
+        <tr>
+        <td><input type="hidden" name="MAX_FILE_SIZE" value="250000" />
+        <input type="file" name="fic" size="50" /></td>
+        <tr>      
+    </table>
+</center>
+<h3 class="mt-5 mb-'4">Etape 2. Indiquer les indisponibilités du coach en grisant la date</h3>
+<center>
+<input id="tab" type="hidden" name="tableau" />
+    <table name = "semaine" class ="table text-center" border="2" style="table-layout: fixes; width :1000px ;"> 
+        <tr>   
+        <td class="fw-bold" colspan="2">Lundi</td>
+        <td class="fw-bold" colspan="2">Mardi</td>
+        <td class="fw-bold" colspan="2">Mercredi</td>
+        <td class="fw-bold" colspan="2">Jeudi</td>
+        <td class="fw-bold" colspan="2">Vendredi</td>
+        <td class="fw-bold" colspan="2">Samedi</td>               
+        </tr>    
+        <tr>
+        <td id="cell1" onclick="changeColor('cell1')">AM</td>
+        <td id="cell2" onclick="changeColor('cell2')">PM</td>
+        <td id="cell3" onclick="changeColor('cell3')">AM</td>
+        <td id="cell4" onclick="changeColor('cell4')">AM</td>
+        <td id="cell5" onclick="changeColor('cell5')">AM</td>
+        <td id="cell6" onclick="changeColor('cell6')">AM</td>
+        <td id="cell7" onclick="changeColor('cell7')">AM</td>
+        <td id="cell8" onclick="changeColor('cell8')">AM</td>
+        <td id="cell9" onclick="changeColor('cell9')">AM</td>
+        <td id="cell10" onclick="changeColor('cell10')">AM</td>
+        <td id="cell11" onclick="changeColor('cell11')">AM</td>
+        <td id="cell12" onclick="changeColor('cell12')">AM</td>
+        </tr>
+    </table>
+</center>
+<h3 class="mt-5 mb-'4"> Etape 3. Entrer le CV du coach</h3>
+<center>
+    <textarea name="cv" id="1" cols="100" rows="40">
+        <xmp>
+        <?xml version="1.0" encoding="utf-8"?>
+        <cv>
+            <etatCivil>
+            <nom></nom>
+            <prenom></prenom>
+            <dateDeNaissance></dateDeNaissance>
+            <email></email>
+            </etatCivil>
+            
+            <formations>
+            <formation>
+            <libelle></libelle>
+            <annee></annee>
+            </formation>
+            <formation>
+            <libelle></libelle>
+            <annee></annee>
+            </formation>
+            </formations>
+            
+            <experiences>
+            <experience>
+            <debut></debut>
+            <fin></fin>
+            <poste></poste>
+            </experience>
+            <experience>
+            <debut></debut>
+            <fin></fin>
+            <poste></poste>
+            </experience>
+            </experiences>
+            </cv>
+        </xmp>
+    </textarea>
+    <div><input class="btn btn-danger mt-4 fs-5 px-5 py-2" type="submit" name ="submit "value="Créer le nouveau coach" onclick = "listDispo()"/>
+    </div>
+</center>
+</form>
+</body>
+</html>

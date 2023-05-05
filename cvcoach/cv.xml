@@ -1,0 +1,37 @@
+
+
+<cv>
+<etatCivil>
+<nom>Nadal</nom>
+<prenom>Rafael</prenom>
+<dateDeNaissance> 20 mars 1986</dateDeNaissance>
+<email>rafa@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>det</libelle>
+<annee>2005</annee>
+</formation>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2008</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 2010</debut>
+<fin>fevrier 2013</fin>
+<joueur>tsonga</joueur>
+<poste>entraineur</poste>
+</experience>
+<experience>
+<debut>janvier 2014</debut>
+<fin>aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>
+
+

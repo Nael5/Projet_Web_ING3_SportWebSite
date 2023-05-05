@@ -1,0 +1,33 @@
+<cv>
+<etatCivil>
+<nom>Martin</nom>
+<prenom>Thomas</prenom>
+<dateDeNaissance> 20 mars 1975</dateDeNaissance>
+<email>thomas@omnes.sport</email>
+</etatCivil>
+
+<formations>
+<formation>
+<libelle>diplome entraineur basketball</libelle>
+<annee>2002</annee>
+</formation>
+<formation>
+<libelle>diplome entraineur physique</libelle>
+<annee>2004</annee>
+</formation>
+</formations>
+
+<experiences>
+<experience>
+<debut>janvier 1993</debut>
+<fin>fevrier 2001</fin>
+<poste>basketteur profesionnel</poste>
+</experience>
+<experience>
+<debut>janvier 2015</debut>
+<fin>Aujourd'hui</fin>
+<poste>entraineur omnes sport</poste>
+</experience>
+</experiences>
+</cv>
+
